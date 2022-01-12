@@ -1,41 +1,121 @@
-.inline-block {
-    display: inline-block;
-    vertical-align: top;
+* {
+    box-sizing: border-box;
+    margin: 0;
 }
 
-.logo {
-    width: 23%;
-    padding: 1%;
-    text-align: center;
+body {
+    font-family: "Roboto", "sans-serif";
 }
 
-nav {
-    width: 73%;
-    padding: 1%;
+/* Navigation */
+
+.nav-container {
+    background: #FFFFFF;
+    height: 91px;
+    position: relative;
 }
 
-ul {
-    width: 50%;
-    margin-left: auto;
-}
-
-.heroImg {
-    height: 600px;
-    padding: 25%;
-}
-
-.content {
-    width: 500px;
+.wrapper {
+    width: 1140px;
     margin: 0 auto;
 }
 
-footer {
-    background-color: #373738;
-    padding: 25%;
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 91px;
 }
 
-footer ul {
-    display: inline-block;
-    vertical-align: top;
-    padding: 25%;
+nav ul {
+    display: flex;
 }
+
+.nav-items li {
+    list-style: none;
+    margin-right: 100px;
+}
+
+.nav-itmes li:nth-last-of-type(1) {
+    margin: 0;
+}
+
+.nav-items li a {
+    color: #000000;
+    font-size: 28.43px;
+    font-weight: 600;
+    font-family: Inter;
+    text-decoration: none;
+}
+
+/* Header */
+
+.header-container {
+    background: #FFFFFF;
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 50.52px;
+line-height: 61px;
+color: #000000;
+margin-bottom: 24px;
+}
+
+header p {
+font-family: Epilogue;
+font-style: normal;
+font-weight: normal;
+font-size: 37.9px;
+line-height: 39px;
+width: 753px;
+color: #000000;
+margin-bottom: 48px;
+}
+
+header a {
+    font-size: 21.33px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    color: #FFFFFF;
+    text-decoration: none;
+    background: #000000;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 12px 48px;
+    display: inline-block;
+    transition: 300ms;
+}
+
+header a:hover {
+    transform: translateY(-8px);
+}
+
+/* Skill Icons */
+
+.skill-icons a {
+    margin: 0 24px;
+}
+
+.skill-icons a:nth-last-of-type(1) {
+    margin-left: 0;
+}
+
+.skill-icons {
+    display: flex;
+    align-items: center;
+}
+
